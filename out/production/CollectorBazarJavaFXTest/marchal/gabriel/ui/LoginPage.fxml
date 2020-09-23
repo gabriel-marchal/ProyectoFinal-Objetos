@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marchal.gabriel.tl.LoginPageController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="737.0" style="-fx-background-color: #f5ed90;" VBox.vgrow="ALWAYS">
+      <children>
+            <ImageView fitHeight="400.0" fitWidth="819.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/geometry-background.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="157.0" layoutY="37.0">
+               <children>
+                  <ImageView fitHeight="296.0" fitWidth="482.0" layoutX="21.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/gradient-blue-green-hd-wallpaper.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField id="emailimput" fx:id="emailInput" alignment="CENTER" layoutX="183.0" layoutY="80.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: white; -fx-font-weight: bold; -fx-text-inner-color: white; -fx-border-width: 0 0 2px 0; -fx-text-fill: white;" />
+                  <PasswordField fx:id="passwordinput" alignment="CENTER" layoutX="183.0" layoutY="134.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0 0 2px 0; -fx-font-weight: bold; -fx-text-inner-color: white; -fx-text-fill: white;" />
+                  <Button id="signInButton" layoutX="233.0" layoutY="182.0" mnemonicParsing="false" onAction="#clickSignIn" style="-fx-background-color: #ffa53a;" text="Ingresar" />
+                  <Button id="registrarme" fx:id="registarUsuario" layoutX="222.0" layoutY="220.0" mnemonicParsing="false" onAction="#clickRegistrarUsuario" style="-fx-background-color: #ffa53a;" text="Registrarme" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="195.0" fitWidth="163.0" layoutX="6.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo2.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

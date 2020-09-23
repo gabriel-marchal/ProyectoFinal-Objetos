@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="402.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marchal.gabriel.tl.CrearSubastaController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="402.0" prefWidth="826.0" style="-fx-background-color: #f4ffb6;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="14.0" prefHeight="46.0" prefWidth="746.0" text="Crear Subasta">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <HBox layoutY="46.0" prefHeight="354.0" prefWidth="761.0">
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #caff86;">
+                            <children>
+                                <AnchorPane layoutX="26.0" prefHeight="354.0" prefWidth="468.0" style="-fx-background-color: #caff86;">
+                                    <children>
+                              <Button fx:id="submitSubasta" layoutX="185.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitSubasta" text="Crear" />
+                              <GridPane layoutY="4.0" prefHeight="323.0" prefWidth="468.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="148.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="129.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="125.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="61.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="ID">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Fecha de Creacion" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Fecha de Inicio" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Fecha de Finalizacion" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Oferta Minima" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Calificacion" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Vendedor" GridPane.rowIndex="10">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Tipo de Usuario" GridPane.rowIndex="11">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label text="Moderador" GridPane.rowIndex="12">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <Label fx:id="fechaInicio" layoutY="6.0" text="Label" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <children>
+                                          <Label fx:id="fechaFinalizacion" layoutY="6.0" text="Label" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <children>
+                                          <Label fx:id="ofertaMinima" layoutY="6.0" text="Label" />
+                                       </children>
+                                    </AnchorPane>
+                                    <Label fx:id="id" text="Label" GridPane.columnIndex="1" />
+                                    <Label fx:id="fechaCreacion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="calificacion" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label fx:id="vendedor" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Label fx:id="tipoUsuario" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                    <Label fx:id="moderador" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                    <TextField fx:id="nuevoOfertaMinima" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <DatePicker fx:id="nuevoFechaInicion" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <DatePicker fx:id="nuevoFechaFinalizacion" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Button fx:id="cambiarFechaInicio" mnemonicParsing="false" onAction="#clickCambiarFechaInicio" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button mnemonicParsing="false" onAction="#clickCambiarFechaFinal" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <Button mnemonicParsing="false" onAction="#clickCambiarOfertaMinima" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <Label prefHeight="17.0" prefWidth="150.0" text="Hora de Inicio (24h)" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Hora de finalizacion (24h)" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="horaInicioTextField" prefHeight="25.0" prefWidth="87.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <TextField fx:id="horaFinalizacionTextField" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Label fx:id="horaFinalizacionLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="horaInicioLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Button fx:id="cambiarHoraInicio" mnemonicParsing="false" onAction="#clickCambiarHoraInicio" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Button fx:id="cambiarHoraFinalizacion" mnemonicParsing="false" onAction="#clickCambiarHoraFinalizacion" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <Label text="Minutos de Inicio" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Minutos de finalizacion" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="minutosDeInicioLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="minutosDeFinalizacionLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <TextField fx:id="minutosInicioTextField" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <TextField fx:id="minutosFinalizacionTextField" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <Button fx:id="buttonMinutosInicio" mnemonicParsing="false" onAction="#clickMinutosInicio" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <Button fx:id="buttonMinutosFinalizacion" mnemonicParsing="false" onAction="#clickMinutosFinalizacion" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <Label text="Precio" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                       <font>
+                                          <Font name="System Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="precio" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                                    <Button fx:id="botonPrecoi" mnemonicParsing="false" onAction="#clickCambiarPrecio" text="Cambiar" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                                    <Label fx:id="precioLabel" prefHeight="17.0" prefWidth="187.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="210.0" layoutY="10.0" prefHeight="356.0" prefWidth="224.0" style="-fx-background-color: #b2ffe6;">
+                     <children>
+                        <Label layoutX="41.0" layoutY="14.0" prefHeight="27.0" prefWidth="140.0" text="Agregar Itemes">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="misItemes" layoutY="82.0" prefHeight="273.0" prefWidth="210.0" />
+                        <Button fx:id="botonSeleccionar" layoutX="125.0" layoutY="50.0" mnemonicParsing="false" onAction="#clickSeleccionarItem" text="Agregar &gt;" />
+                     </children>
+                        </AnchorPane>
+                  <AnchorPane prefHeight="356.0" prefWidth="238.0" style="-fx-background-color: #afe8ff;">
+                     <children>
+                        <ListView fx:id="itemesASubastar" layoutY="83.0" prefHeight="273.0" prefWidth="239.0" />
+                        <Label layoutX="19.0" layoutY="14.0" text="Itemes a Subastar">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="botonRemover" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#clickRemoverItem" text="&lt; Remover" />
+                     </children>
+                  </AnchorPane>
+                    </children>
+                </HBox>
+            <Button fx:id="signout" layoutX="678.0" layoutY="7.0" mnemonicParsing="false" onAction="#signout" text="Salir" />
+            <Button fx:id="volverPerfil" layoutX="582.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickVolverPerfil" text="Perfil" />
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

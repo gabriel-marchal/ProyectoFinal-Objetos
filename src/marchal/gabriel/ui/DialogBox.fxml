@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="57.0" prefWidth="186.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marchal.gabriel.ui.CrearSubastaController">
+   <children>
+      <Button fx:id="cambiarFechaInicio" layoutX="77.0" layoutY="31.0" mnemonicParsing="false" onAction="#cambiarFechaInicio" text="OK" />
+      <DatePicker fx:id="inputFechaInicio" layoutX="6.0" layoutY="2.0" onAction="#inputFechaInput" promptText="Fecha de Inicio" />
+   </children>
+</AnchorPane>

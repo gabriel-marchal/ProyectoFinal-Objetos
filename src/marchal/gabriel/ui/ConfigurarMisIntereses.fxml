@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marchal.gabriel.tl.ConfigurarMisIntereses">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="706.0" style="-fx-background-color: #f4ffb6;" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox layoutY="46.0" prefHeight="354.0" prefWidth="761.0">
+                    <children>
+                        <AnchorPane prefHeight="355.0" prefWidth="364.0" style="-fx-background-color: #caff86;">
+                     <children>
+                        <ListView fx:id="listCategorias" layoutX="21.0" layoutY="77.0" prefHeight="277.0" prefWidth="301.0" />
+                        <Button fx:id="btnAgregar" layoutX="279.0" layoutY="41.0" mnemonicParsing="false" onAction="#clickAgregarInteres" text="Agregar &gt;" />
+                     </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="355.0" prefWidth="397.0" style="-fx-background-color: #d7c2ff;">
+                            <children>
+                                <Button fx:id="botonGuardar" layoutX="-37.0" layoutY="315.0" mnemonicParsing="false" onAction="#clickGuardarCambios" prefHeight="25.0" prefWidth="109.0" text="Guardar Cambios" />
+                        <ListView fx:id="listMisIntereses" layoutX="76.0" layoutY="78.0" prefHeight="277.0" prefWidth="271.0" />
+                        <Button fx:id="btnRemover" layoutX="18.0" layoutY="41.0" mnemonicParsing="false" onAction="#clickRemoverInteres" text="&lt; Remover" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+                <Button fx:id="signout" layoutX="704.0" layoutY="7.0" mnemonicParsing="false" onAction="#signout" text="Salir" />
+                <Button fx:id="volverPerfil" layoutX="619.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickVolverPerfil" text="Perfil" />
+                <Label layoutX="14.0" layoutY="14.0" text="Mis Intereses">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
